@@ -1,0 +1,18 @@
+<!-- app/views/prompts/index.html.erb -->
+<h1>Prompt Search</h1>
+
+<%= form_tag(prompts_path, method: :get) do %>
+  <%= text_field_tag :query, params[:query], placeholder: "Enter words..." %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<% if @prompts.any? %>
+  <h2>Search Results for: <%= params[:query] %></h2>
+  <ul>
+    <% @prompts.each do |prompt| %>
+      <li><%= prompt.content %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No results found for: <%= params[:query] %></p>
+<% end %>
