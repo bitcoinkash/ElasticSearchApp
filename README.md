@@ -14,16 +14,16 @@ This is a Ruby on Rails application that allows users to search for prompts base
 To set up and run this application locally, follow these steps:
 
 1. **Clone the Repository**: 
-git clone <repository-url>
-cd prompt-search-app
+`git clone <repository-url>`
+`cd prompt-search-app`
 
 
 2. **Install Dependencies**: 
-bundle install
+`bundle install`
 
 
 3. **Set Up Database**: 
-rails db:migrate
+`rails db:migrate`
 
 
 4. **Seed the Database**: 
@@ -32,7 +32,7 @@ If you have a CSV file containing prompts data, you can seed the database by run
 
 
 5. **Start the Rails Server**: 
-rails server
+`rails server`
 
 6. **Access the Application**: 
 Open your web browser and navigate to `http://localhost:3000` to access the application.
@@ -49,7 +49,7 @@ Place the downloaded CSV file in the `data` directory of the application.
 
 3. **Run the Import Task**: 
 Run the following rake task to import the prompts data from the CSV file:
-rake import:prompts
+`rake import:prompts`
 
 
 ## Contributing
