@@ -10,6 +10,6 @@
 
 require 'csv'
 
-CSV.foreach(Rails.root.join('/Users/my-mac/Documents/Ruby_On_Rails/Audemic/Audemic/Stable-Diffusion-Prompts/data/dataevalsmall.csv'), headers: true) do |row|
+CSV.foreach(Rails.root.join('/Users/my-mac/Documents/Ruby_On_Rails/madrid/app/data/dataevalsmall.csv'), headers: true) do |row|
   Prompt.create(content: row['Prompt'])
 end
